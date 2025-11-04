@@ -10,18 +10,19 @@ export default function TodoTemplate({
         <div
             style={{
                 display: "flex",
-                justifyContent: "center", alignItems: "flex-start",
-                minHeight: "100vh", backgroundColor: "#ffffff",
+                justifyContent: "center",  // 가로 가운데 정렬
+                alignItems: "center",      // 세로 가운데 정렬
+                minHeight: "100vh",        // 화면 전체 높이 사용
+                backgroundColor: "#ffffff" // 흰 배경
             }}
         >
             <div
                 style={{
-                    width: "400px",
+                    width: "420px",
                     background: "#fff",
-                    borderRadius: "10px",
-                    padding: "30px",
-                    boxShadow: "0 0 8px rgba(0, 0, 0, 0.1)",
-                    marginTop: "50px",
+                    borderRadius: "8px",
+                    padding: "32px 24px",
+                    boxShadow: "0 2px 8px rgba(0, 0, 0, 0.1)",
                 }}
             >
                 {children}
