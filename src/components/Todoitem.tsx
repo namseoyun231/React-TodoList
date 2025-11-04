@@ -37,7 +37,6 @@ export default function TodoItem({ todo, onToggle, onRemove }: TodoItemProps) {
                 style={{
                     background: "transparent",
                     border: "none",
-                    color: "#ff6b6b",
                     fontSize: "16px",
                     cursor: "pointer",
                 }}
