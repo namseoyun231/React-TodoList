@@ -21,7 +21,7 @@ export default function TodoInsert({onAdd,}: {
         <form onSubmit={onSubmit}>
             <input
                 type="text"
-                placeholder="할 일을 입력하세요"
+                placeholder="할 일을 입력하고 Enter"
                 value={value}
                 onChange={onChange}
             />
