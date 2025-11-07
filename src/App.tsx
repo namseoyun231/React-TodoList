@@ -34,7 +34,7 @@ export default function App() {
 
     return (
         <TodoTemplate>
-            <h3 style={{ textAlign: "left", marginLeft: "4px" }}> Todo List </h3>
+            <h2 style={{ textAlign: "left", marginLeft: "4px" }}> Todo List </h2>
             <TodoInsert onAdd={handleAdd} />
             <TodoList todos={todos} onToggle={handleToggle} onRemove={handleRemove} />
         </TodoTemplate>
