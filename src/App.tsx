@@ -8,16 +8,12 @@ export type Todo = {
     text: string;
     done: boolean;
 };
-
 export default function App() {
     const [todos, setTodos] = useState<Todo[]>([]);
     const nextId = useRef(1);
-
     const handleAdd = (text: string) => {
-        setTodos((prev) => [
-            ...prev,
-            { id: nextId.current++, text, done: false },
-        ]);
+        setTodos((prev) => [...prev, { id: nextId.current++,
+            text, done: false }]);
     };
 
     const handleToggle = (id: number) => {
